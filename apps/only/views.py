@@ -4,7 +4,7 @@ from .models import Settings
 
 def index(request):
     settings = Settings.objects.first()   
-    return render(request, 'index.html', {'settings': settings})
+    return render(request, 'index.html', {'setting': settings})
 
 
 # Create your views here.
